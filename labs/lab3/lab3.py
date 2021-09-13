@@ -4,8 +4,8 @@ Maeve O'Toole
 lab3.py
 
 This program is aimed to develop a simple Python program
-that asks for inputs and produce and do arithmetic using
-loops, specifically for loops.
+that asks for inputs, produce outputs, and does arithmetic
+using loops.
 
 This assignment is entirely my own work.
 
