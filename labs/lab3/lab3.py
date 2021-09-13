@@ -11,8 +11,6 @@ This assignment is entirely my own work.
 
 """
 
-import math
-
 def average():
     num = eval(input("Enter the number of homework assignments here: "))
     acc = 0
@@ -55,3 +53,4 @@ def pi():
         acc = (num / denom) * acc
     print("The approximation of pi is", acc)
 pi()
+
