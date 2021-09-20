@@ -32,7 +32,7 @@ This assignment is entirely my own work.
 # calculate the rms average
 # calculate the harmonic average
 # calculate the geometric mean
-# return the values based on the users input in the console
+# return the values based on the users input in the console below
 
 import math
 
