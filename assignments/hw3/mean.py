@@ -28,7 +28,7 @@ This assignment is entirely my own work.
 # and geometric mean of the users specified input value.
 
 #3 What is a step-by-step list of what the program must do, aka an algorithm?
-# ask user for the input of values
+# ask user for the input of values they want to calculate the mean of
 # calculate the rms average
 # calculate the harmonic average
 # calculate the geometric mean
@@ -37,12 +37,23 @@ This assignment is entirely my own work.
 import math
 
 def main():
-    print("This program calculates the RMS Average, the Harmonic Mean, and the Geometric Mean")
-    n = eval(input("Enter the numbers you would like to evaluate here: "))
-    rms_ave = math.sqrt(((math.fsum(1, n+1)) * x ** 2) / n ))
-    har_mean =
+
+    num = eval(input("Enter the values to be entered: "))
+
+    rmsacc = 0
+    harmacc = 0
+    geoacc = 1
+
+    for i in range(1, num + 1):
+
+        value = eval(input("Enter value " + str(i)))
+        rmsacc = rmsacc + (value ** 2)
+        harmacc = harmacc + (1/value)
+        geoacc = geoacc * value
+
+    print(round(math.sqrt( rmsacc / num ), 3))
+    print(round( num / harmacc, 3))
+    print(round((geoacc ** ( 1 / num )), 3))
 
 if __name__ == '__main__':
     main()
-
-

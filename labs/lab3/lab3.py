@@ -53,4 +53,3 @@ def pi():
         acc = (num / denom) * acc
     print("The approximation of pi is", acc)
 pi()
-
