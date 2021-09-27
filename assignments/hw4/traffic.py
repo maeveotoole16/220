@@ -3,7 +3,7 @@ Maeve O'Toole
 
 traffic.py
 
-This program is aimed to help practice accumulations and nested loops.
+This program is aimed to help practice accumulations and nested loops in Python.
 It specifically works to anaylze traffic patterns based on the users input.
 
 This assignment is entirely my own work.
