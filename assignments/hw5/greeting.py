@@ -7,7 +7,7 @@ This program displays a heart using the graphics library
 with an arrow that shoots through the heart to make a festive
 Valentine's Day greeting card.
 
-This assignment is entirely my own work.
+This assignment is entirely my work.
 
 """
 
