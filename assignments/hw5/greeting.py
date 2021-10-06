@@ -3,7 +3,7 @@ Maeve O'Toole
 
 greeting.py
 
-This program displays a heart using the graphics packages
+This program displays a heart using the graphics library
 with an arrow that shoots through the heart to make a festive
 Valentine's Day greeting card.
 
