@@ -15,39 +15,22 @@ This assignment is entirely my own work.
 from graphics import *
 
 def code(message, keyword):
-    encrypted = ""
-    alphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
-                 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-    i = 0
-    for letter in message:
-        if letter in alphabets:
-            if (i == len(keyword)):
-                i = 0
-            letterIndex = alphabets.index(letter)
-            keyIndex = alphabets.index(keyword[i])
-            newIndex = letterIndex + keyIndex
-            if (newIndex > 25):
-                newIndex = newIndex % 26
 
-            encrypted = encrypted + alphabets[newIndex]
-            i = i + 1
-        else:
-            encrypted = encrypted + letter
-    return encrypted
+    coded_phrase = ""
+    keyword = keyword.upper()
+    message = message.upper()
+    message = message.replace(" ", "")
 
-    message1 = input("Enter your first string here: ")
-    message2 = input("Enter your second string here: ")
-    acc = ""
-    for i in range(len(message1)):
-        c = ord(message1[i])
-        key = ord(message2[i])
-        new_message = (c + key) - 97
-        acc = acc + chr(new_message)
-    print(acc)
+    for i in range(len(message)):
+        ordinal = ord(message[i])
+        ordinal = (((ordinal - 65) + (ord(keyword[i % len(keyword)]) - 65)) % 26) + 65
+        coded_phrase = coded_phrase + chr(ordinal)
+
+    return coded_phrase
 
 def box():
 
-    win = GraphWin("Vigenere Cipher", 500, 500)
+    win = GraphWin("Vigenere", 500, 500)
     win.setCoords(0, 0, 10, 10)
 
     message_text = Text(Point(3.8, 8.5), "Message to Code: ")
@@ -75,7 +58,7 @@ def box():
     button_outline.undraw()
     button_text.undraw()
 
-    output_val = Text(Point(3, 5), " Resulting Message: " + code(message, keyword))
+    output_val = Text(Point(5, 5), " Resulting Message: " + code(message, keyword))
     output_val.draw(win)
 
     message2 = Text(Point(5, .5), "Click anywhere to close!")
