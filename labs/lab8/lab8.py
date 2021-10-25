@@ -3,7 +3,7 @@ Maeve O'Toole
 
 lab8.py
 
-This lab practices writing functions.
+This program practices writing functions.
 
 This assignment is entirely my own work.
 
