@@ -16,7 +16,7 @@ class Button:
 
     """
 
-    Button is a class that represents a button in 2-D space
+    Button is a class that represents a button in the 2-D space.
 
     """
 
