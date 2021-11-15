@@ -15,7 +15,9 @@ from graphics import Text
 class Button:
 
     """
+
     Button is a class that represents a button in 2-D space
+
     """
 
     def __init__(self, shape, label):

@@ -6,7 +6,7 @@ three_door_game.py
 
 This program will draw three buttons, being three labeled doors,
 in a graphics window and randomly select one of the buttons as the
-secret door. If you click on the right door, you win!
+secret door. If you click on the right door, you win.
 
 This assignment is entirely my own work.
 
