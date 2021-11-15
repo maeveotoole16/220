@@ -19,8 +19,8 @@ from graphics import Text
 from graphics import Rectangle
 from button import Button
 
-def main():
 
+def main():
     win = GraphWin("Three Door Game", 500, 500)
     win.setBackground('beige')
     win.setCoords(10, 10, 0, 0)
@@ -37,7 +37,7 @@ def main():
     message2.setSize(18)
     message2.draw(win)
 
-    button1 = Button(Rectangle(Point(7, 7), Point(9, 4)), 'Door 1')
+    button1 = Button(Rectangle(Point(9, 4), Point(7, 7)), 'Door 1')
     button1.text.setTextColor('pink')
     button1.text.setStyle('bold')
     button1.draw(win)
@@ -56,9 +56,8 @@ def main():
     message1.undraw()
     message2.undraw()
 
-    answer = randrange(4)
+    answer = randrange(3)
     for button in [button1, button2, button3]:
-        print(button.is_clicked(point))
         if button.is_clicked(point) and button == [button1, button2, button3][answer]:
             button.color_button('green')
             message3 = Text(Point(5, 2), "You win!")
@@ -66,7 +65,7 @@ def main():
             message3.setTextColor('green')
             message3.draw(win)
             break
-        elif button.is_clicked(point):
+        if button.is_clicked(point):
             button.color_button("red")
             message4 = Text(Point(5, 2), "You lose!")
             message4.setSize(18)
@@ -81,6 +80,7 @@ def main():
 
     win.getMouse()
     win.close()
+
 
 if __name__ == '__main__':
     main()
