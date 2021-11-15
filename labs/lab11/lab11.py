@@ -63,7 +63,5 @@ def play():
         print("You lose")
 
 def main():
-
     play()
-
 main()
