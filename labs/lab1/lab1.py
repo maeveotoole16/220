@@ -32,7 +32,7 @@ calc_volume()
 def shooting_percentage():
     total_shots = eval(input("Enter the number of total shots: "))
     total_shots_made = eval(input("Enter the number of shots made: "))
-    percentage = (total_shots_made / total_shots)*100
+    percentage = (total_shots_made / total_shots) * 100
     print("Percentage =", percentage, "%")
 shooting_percentage()
 

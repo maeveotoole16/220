@@ -23,9 +23,6 @@ def sum_of_threes():
 sum_of_threes()
         # range function takes three arguements (start, end (which is 1 plus your wanted end, and step)
         # make sure you add one if your end is a variable
-        # acc accumulates all of your numbers together
-
-#Multiplication Table
 
 def multiplication_table():
     # h (height) x l (length) to make it a table
@@ -41,8 +38,8 @@ def triangle_area():
     a = eval(input("Enter the length of side a:"))
     b = eval(input("Enter the length of side b:"))
     c = eval(input("Enter the length of side c:"))
-    s = (a + b + c)/2
-    x = s*(s-a)*(s-b)*(s-c)
+    s = (a + b + c) / 2
+    x = s * (s - a) * (s - b) * (s - c)
     A = math.sqrt(x)
     print(A)
 triangle_area()
