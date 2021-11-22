@@ -77,7 +77,7 @@ def main():
 
     find_and_remove_first()
     read_data()
-    is_in_linear(3, [4, 3, 6, 7])
+    is_in_linear()
     good_input()
     num_digits()
     hi_lo_game()
