@@ -37,12 +37,14 @@ def is_in_linear(search_val, values):
     return False
 
 def good_input():
+
     number = eval(input("Enter a number between 1 and 10: "))
     while not number >= 1 and not number <= 10:
         number = eval(input("Enter a number between 1 and 10: "))
     return number
 
 def num_digits():
+
     number = eval(input("Enter a positive integer: "))
     while number >= 1:
         digits = 0
