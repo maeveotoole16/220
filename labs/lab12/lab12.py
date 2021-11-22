@@ -6,7 +6,7 @@ lab12.py
 
 This program will be the functions of lab12.
 
-This assignment is entirely my own work.
+This assignment is entirely my work.
 
 """
 from random import randint
