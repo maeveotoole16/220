@@ -69,7 +69,7 @@ def star_find(filename):
         if eval(signals[i]) >= 4000 and eval(signals[i]) <= 5000:
             signals_found.append(signals[i])
         else:
-            if len(signals_found) == 5:
+            if len(signals_found) >= 5:
                 break
 
     print("Number of signals:", len(signals_found))
